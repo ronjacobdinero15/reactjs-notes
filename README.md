@@ -1,6 +1,6 @@
 # reactjs-notes
 
-#$ npm installations
+# npm installations
 
 ### Vite
 ```bash
@@ -34,7 +34,6 @@ module.exports = {
 ```
 
 ### Tailwind CSS with Vite
-
 [Installation Documentation](https://tailwindcss.com/docs/guides/vite#react)
 
 **OR**
