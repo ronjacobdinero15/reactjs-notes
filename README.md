@@ -1,6 +1,6 @@
 # reactjs-notes
 
-# npm installations
+## npm installations
 
 ### Vite
 ```bash
