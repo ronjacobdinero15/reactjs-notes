@@ -112,9 +112,14 @@ npm i react-hot-toast
 npm i react-hook-form
 ```
 
-### supabase
+### Supabase
 ```bash
 npm i --save @supabase/supabase-js
+```
+
+### Framer Motion
+```bash
+npm i framer-motion
 ```
 
 ### date-fns 
