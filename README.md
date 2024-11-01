@@ -12,7 +12,6 @@ Inside this file, copy and paste this:
     "target": "ES6",
     "module": "ES6",
     "jsx": "preserve"
-    // "checkJs": true
   },
   "exclude": ["node_modules", "**/node_modules/*", ".vscode"],
   "include": ["src/**/*"]
