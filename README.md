@@ -17,6 +17,9 @@ Inside this file, copy and paste this:
   "include": ["src/**/*"]
 }
 ```
+Reference: 
+[VSCode](https://code.visualstudio.com/docs/languages/jsconfig#_why-do-i-need-a-jsconfigjson-file)
+[Udemy](https://www.udemy.com/course/the-ultimate-react-course/learn/lecture/38038174#questions/21582188)
 
 ## npm installations
 
