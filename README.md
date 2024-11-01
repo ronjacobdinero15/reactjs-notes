@@ -1,5 +1,24 @@
 # reactjs-notes
 
+## On every React project (to make intellisense work on js files)
+Create a file in the root directory called:
+```
+jsconfig.json
+```
+Inside this file, copy and paste this:
+```
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ES6",
+    "jsx": "preserve"
+    // "checkJs": true
+  },
+  "exclude": ["node_modules", "**/node_modules/*", ".vscode"],
+  "include": ["src/**/*"]
+}
+```
+
 ## npm installations
 
 ### Vite
