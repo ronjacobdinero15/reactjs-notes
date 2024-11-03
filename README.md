@@ -12,11 +12,10 @@ Inside this file, copy and paste this:
 {
   "compilerOptions": {
     "target": "ES6",
-    "module": "ES6",
-    "jsx": "preserve"
-  },
-  "exclude": ["node_modules", "**/node_modules/*", ".vscode"],
-  "include": ["src/**/*"]
+    "module": "commonjs",
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true
+  }
 }
 ```
 Reference: 
