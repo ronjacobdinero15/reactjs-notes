@@ -15,7 +15,9 @@ Inside this file, copy and paste this:
     "module": "commonjs",
     "jsx": "preserve",
     "allowSyntheticDefaultImports": true
-  }
+  },
+  "exclude": ["node_modules", "**/node_modules/*"],
+  "include": ["src/**/*"]
 }
 ```
 Reference: 
