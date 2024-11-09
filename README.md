@@ -144,6 +144,11 @@ npm i react-hook-form
 npm i --save @supabase/supabase-js
 ```
 
+### styled-components
+```bash
+npm install styled-components
+```
+
 ### Framer Motion
 ```bash
 npm i framer-motion
