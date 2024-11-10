@@ -97,22 +97,6 @@ Then install this extension
 Tailwind CSS IntelliSense
 ```
 
-And install a special prettier extension (*this will automatically sort tailwind classes*)
-
-[prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
-
-**OR**
-```bash
-npm install -D prettier prettier-plugin-tailwindcss
-```
-
-Then create **.prettierrc** file then copy and paste this code in there:
-```javascript
-{
-  "plugins": ["prettier-plugin-tailwindcss"]
-}
-```
-
 ### React Router
 ```bash
 npm i react-router-dom
@@ -191,5 +175,20 @@ npm i lodash
 import _  from 'lodash'
 ```
 
+**NOT NEEDED**
+And install a special prettier extension (*this will automatically sort tailwind classes*)
 
+[prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
+
+**OR**
+```bash
+npm install -D prettier prettier-plugin-tailwindcss
+```
+
+Then create **.prettierrc** file then copy and paste this code in there:
+```javascript
+{
+  "plugins": ["prettier-plugin-tailwindcss"]
+}
+```
 
