@@ -101,6 +101,11 @@ And install a special prettier extension (*this will automatically sort tailwind
 
 [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
 
+**OR**
+```bash
+npm install -D prettier prettier-plugin-tailwindcss
+```
+
 Then create **.prettierrc** file then copy and paste this code in there:
 ```javascript
 {
