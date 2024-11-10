@@ -175,7 +175,8 @@ npm i lodash
 import _  from 'lodash'
 ```
 
-**NOT NEEDED**
+## NOT NEEDED
+
 And install a special prettier extension (*this will automatically sort tailwind classes*)
 
 [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
