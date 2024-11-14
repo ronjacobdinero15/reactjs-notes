@@ -24,7 +24,7 @@ Reference:
 [VSCode](https://code.visualstudio.com/docs/languages/jsconfig#_why-do-i-need-a-jsconfigjson-file)
 [Udemy](https://www.udemy.com/course/the-ultimate-react-course/learn/lecture/38038174#questions/21582188)
 
-### Add to every .gitignore
+## Add to every .gitignore
 ```bash
 jsconfig.json
 ```
