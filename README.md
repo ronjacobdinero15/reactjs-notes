@@ -165,6 +165,13 @@ npm install styled-components
 npm i framer-motion
 ```
 
+### Recharts
+```bash
+npm i
+```bash
+npm install recharts
+```
+
 ### date-fns 
 *(a very popular library for manipulating and for doing calculations with dates.)*
 ```bash
