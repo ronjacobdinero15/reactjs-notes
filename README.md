@@ -102,6 +102,7 @@ Then install this extension
 Tailwind CSS IntelliSense
 ```
 
+### UNNECESSARY (HEADWIND EXTENSION ALREADY EXISTS)
 And install a special prettier extension (*this will automatically sort tailwind classes*)
 
 [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
