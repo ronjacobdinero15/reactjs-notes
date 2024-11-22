@@ -119,6 +119,11 @@ Then create **.prettierrc** file then copy and paste this code in there:
 }
 ```
 
+### react-error-boundary
+```bash
+npm react-error-boundary
+```
+
 ### React Router
 ```bash
 npm i react-router-dom
