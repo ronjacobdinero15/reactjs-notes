@@ -1,5 +1,8 @@
 # reactjs-notes
 
+### Template
+[Template repo](https://github.com/ronjacobdinero15/template)
+
 ## On every React project (to make intellisense work on js files)
 ![autocomplete_intellisense_fixed](https://github.com/user-attachments/assets/422b71b3-b7c7-410e-a816-f5887f2f2d90)
 
