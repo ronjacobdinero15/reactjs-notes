@@ -1,6 +1,6 @@
 # reactjs-notes
 
-### Template
+## Template
 [Template repo](https://github.com/ronjacobdinero15/template)
 
 ## On every React project (to make intellisense work on js files)
