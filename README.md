@@ -153,6 +153,26 @@ npm i react-icons
 ```bash
 npm i react-hot-toast
 ```
+```
+<Toaster
+  position="top-center"
+  gutter={12}
+  containerStyle={{ margin: '8px' }}
+  toastOptions={{
+    success: {
+      duration: 3000,
+    },
+    error: {
+      duration: 5000,
+    },
+    style: {
+      fontSize: '16px',
+      maxWidth: '800px',
+      padding: '16px 24px',
+    },
+  }}
+/>
+```
 
 ### react form
 ```bash
