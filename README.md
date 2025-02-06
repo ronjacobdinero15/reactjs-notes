@@ -105,6 +105,11 @@ Then install this extension
 Tailwind CSS IntelliSense
 ```
 
+### Tailwind icons (from devs who built Tailwind and React)
+```bash
+npm i @heroicons/react
+```
+
 ### UNNECESSARY (HEADWIND EXTENSION ALREADY EXISTS)
 And install a special prettier extension (*this will automatically sort tailwind classes*)
 
