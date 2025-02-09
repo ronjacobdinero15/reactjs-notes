@@ -186,7 +186,7 @@ npm i react-hook-form
 
 ### Supabase
 ```bash
-npm i --save @supabase/supabase-js
+npm i @supabase/supabase-js
 ```
 
 ### styled-components
