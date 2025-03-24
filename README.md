@@ -110,8 +110,8 @@ Tailwind CSS IntelliSense
 npm i @heroicons/react
 ```
 
-### UNNECESSARY (HEADWIND EXTENSION ALREADY EXISTS)
-And install a special prettier extension (*this will automatically sort tailwind classes*)
+### IF HEADWIND EXTENSION DON'T WORK
+install a special prettier extension (*this will automatically sort tailwind classes*)
 
 [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
 
@@ -126,6 +126,11 @@ Then create **.prettierrc** file then copy and paste this code in there:
   "plugins": ["prettier-plugin-tailwindcss"],
   "semi": false
 }
+```
+
+### SVGR
+```bash
+npm install --save-dev @svgr/webpack
 ```
 
 ### react-error-boundary
