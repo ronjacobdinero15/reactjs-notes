@@ -49,6 +49,29 @@ Then create **.prettierrc** file then copy and paste this code in there:
 }
 ```
 
+We can also enforce the file naming conventions and folder naming conventions in the project. For example, you can enforce that all files should be named in kebab-case. This can help you to keep your codebase consistent and easier to navigate.
+
+Inside tsconfig.json
+```javascript
+'check-file/filename-naming-convention': [
+  'error',
+  {
+      '**/*.{ts,tsx}': 'KEBAB_CASE',
+  },
+  {
+      // ignore the middle extensions of the filename to support filename like bable.config.js or smoke.spec.ts
+      ignoreMiddleExtensions: true,
+  },
+],
+'check-file/folder-naming-convention': [
+  'error',
+  {
+    // all folders within src (except __tests__)should be named in kebab-case
+    'src/**/!(__tests__)': 'KEBAB_CASE',
+  },
+],
+```
+
 ### SVGR
 ```bash
 npm install --save-dev @svgr/webpack
