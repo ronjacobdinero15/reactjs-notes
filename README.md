@@ -1,8 +1,5 @@
 # reactjs-notes
 
-## Template
-[Template repo](https://github.com/ronjacobdinero15/template)
-
 ## On every React project (to make intellisense work on js files)
 ![autocomplete_intellisense_fixed](https://github.com/user-attachments/assets/422b71b3-b7c7-410e-a816-f5887f2f2d90)
 
@@ -27,83 +24,7 @@ Reference:
 [VSCode](https://code.visualstudio.com/docs/languages/jsconfig#_why-do-i-need-a-jsconfigjson-file)
 [Udemy](https://www.udemy.com/course/the-ultimate-react-course/learn/lecture/38038174#questions/21582188)
 
-## Add to every .gitignore
-```bash
-jsconfig.json
-```
-
 ## npm installations
-
-### Vite
-```bash
-npm create vite@latest
-```
-```javascript
-// .eslintrc.cjs
-
-module.exports = {
-  root: true,
-  env: { browser: true, es2020: true },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
-    'plugin:react-hooks/recommended',
-  ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
-  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  settings: { react: { version: '18.2' } },
-  plugins: ['react-refresh'],
-  rules: {
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-    ],
-    'no-unused-vars': 'warn',
-    'react/prop-types': 'off',
-  },
-};
-```
-
-### Tailwind CSS with Vite
-[Installation Documentation](https://tailwindcss.com/docs/guides/vite#react)
-
-**OR**
-```bash
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
-```
-
-Copy and paste the content line
-```javascript
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-```
-Copy and paste this at the very top of **./src/index.css**
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-
-Then (turn on/restart)
-```bash
-npm run dev
-```
-
-Then install this extension
-```bash
-Tailwind CSS IntelliSense
-```
 
 ### Tailwind icons (from devs who built Tailwind and React)
 ```bash
@@ -230,11 +151,6 @@ npm i @redux-devtools/extension
 ### JSON server (for fake api)
 ```bash
 npm i json-server
-```
-
-### ESLint
-```bash
-npm i eslint vite-plugin-eslint eslint-config-react-app --save-dev
 ```
 
 ### lodash
