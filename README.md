@@ -51,7 +51,7 @@ Then create **.prettierrc** file then copy and paste this code in there:
 
 We can also enforce the file naming conventions and folder naming conventions in the project. For example, you can enforce that all files should be named in kebab-case. This can help you to keep your codebase consistent and easier to navigate.
 
-Inside tsconfig.json
+Add this inside the rules array inside .eslintrc.json file:
 ```javascript
 'check-file/filename-naming-convention': [
   'error',
