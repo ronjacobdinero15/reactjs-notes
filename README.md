@@ -2,7 +2,6 @@
 
 ## npm installations
 
-### IF HEADWIND EXTENSION DON'T WORK
 install a special prettier extension (*this will automatically sort tailwind classes*)
 
 [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
@@ -18,29 +17,6 @@ Then create **.prettierrc** file then copy and paste this code in there:
   "plugins": ["prettier-plugin-tailwindcss"],
   "semi": false
 }
-```
-
-Enforce kebab-casing on all files and folders:
-
-Add this inside the rules array inside .eslintrc.json file:
-```javascript
-'check-file/filename-naming-convention': [
-  'error',
-  {
-      '**/*.{ts,tsx}': 'KEBAB_CASE',
-  },
-  {
-      // ignore the middle extensions of the filename to support filename like bable.config.js or smoke.spec.ts
-      ignoreMiddleExtensions: true,
-  },
-],
-'check-file/folder-naming-convention': [
-  'error',
-  {
-    // all folders within src (except __tests__)should be named in kebab-case
-    'src/**/!(__tests__)': 'KEBAB_CASE',
-  },
-],
 ```
 
 ### SVGR
