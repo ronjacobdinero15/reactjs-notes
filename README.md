@@ -1,35 +1,6 @@
 # reactjs-notes
 
-## On every React project (to make intellisense work on js files)
-![autocomplete_intellisense_fixed](https://github.com/user-attachments/assets/422b71b3-b7c7-410e-a816-f5887f2f2d90)
-
-Create a file in the root directory called:
-```
-jsconfig.json
-```
-Inside this file, copy and paste this:
-```
-{
-  "compilerOptions": {
-    "target": "ES6",
-    "module": "commonjs",
-    "jsx": "preserve",
-    "allowSyntheticDefaultImports": true
-  },
-  "exclude": ["node_modules", "**/node_modules/*"],
-  "include": ["src/**/*"]
-}
-```
-Reference: 
-[VSCode](https://code.visualstudio.com/docs/languages/jsconfig#_why-do-i-need-a-jsconfigjson-file)
-[Udemy](https://www.udemy.com/course/the-ultimate-react-course/learn/lecture/38038174#questions/21582188)
-
 ## npm installations
-
-### Tailwind icons (from devs who built Tailwind and React)
-```bash
-npm i @heroicons/react
-```
 
 ### IF HEADWIND EXTENSION DON'T WORK
 install a special prettier extension (*this will automatically sort tailwind classes*)
