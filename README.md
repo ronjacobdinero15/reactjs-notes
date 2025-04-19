@@ -75,11 +75,11 @@ declare module "*.svg?url" {
 }
 ```
 
-Add the type decleration file to your **tsconfig.json**'s include array. Ensure it's the first item:
+Add the type declaration file to your **tsconfig.json**'s include array. Ensure it's the first item:
 ```bash
 {
   "include": [
-    **"svgr.d.ts"**,
+    "svgr.d.ts",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
