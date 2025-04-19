@@ -24,6 +24,71 @@ Then create **.prettierrc** file then copy and paste this code in there:
 npm install --save-dev @svgr/webpack
 ```
 
+Inside **next.config.ts**:
+```bash
+import type { NextConfig } from "next"
+import type { RuleSetRule } from "webpack"
+
+const nextConfig: NextConfig = {
+  webpack(config) {
+    const fileLoaderRule = config.module.rules.find(
+      (rule: RuleSetRule) =>
+        rule.test instanceof RegExp && rule.test.test(".svg"),
+    )
+
+    config.module.rules.push(
+      {
+        ...fileLoaderRule,
+        test: /\.svg$/i,
+        resourceQuery: /url/, // *.svg?url
+      },
+      {
+        test: /\.svg$/i,
+        issuer: fileLoaderRule.issuer,
+        resourceQuery: { not: [...fileLoaderRule.resourceQuery.not, /url/] }, // exclude if *.svg?url
+        use: ["@svgr/webpack"],
+      },
+    )
+
+    fileLoaderRule.exclude = /\.svg$/i
+
+    return config
+  },
+}
+
+export default nextConfig
+```
+
+Create **svgr.d.ts** at the root of your repo and paste:
+```bash
+declare module "*.svg" {
+  import { FC, SVGProps } from "react"
+  const content: FC<SVGProps<SVGElement>>
+  export default content
+}
+
+declare module "*.svg?url" {
+  import { StaticImageData } from "next/image"
+
+  const content: StaticImageData
+  export default content
+}
+```
+
+Add the type decleration file to your **tsconfig.json**'s include array. Ensure it's the first item:
+```bash
+{
+  "include": [
+    **"svgr.d.ts"**,
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ]
+  // ...other config
+}
+```
+
 ### react-error-boundary
 ```bash
 npm i react-error-boundary
