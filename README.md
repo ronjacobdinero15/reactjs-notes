@@ -59,6 +59,18 @@ const nextConfig: NextConfig = {
 export default nextConfig
 ```
 
+Install
+```bash
+npm install --save-dev @types/webpack
+```
+
+Inside **tsconfig.json**, add **"./*"** to the paths array:
+```bash
+"paths": {
+  "@/*": ["./src/*", "./*"]
+}
+```
+
 Create **svgr.d.ts** at the root of your repo and paste:
 ```bash
 declare module "*.svg" {
