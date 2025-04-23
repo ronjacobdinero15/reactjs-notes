@@ -71,6 +71,20 @@ Inside **tsconfig.json**, add **"./*"** to the paths array:
 }
 ```
 
+Add the type declaration file to your **tsconfig.json**'s include array. Ensure it's the first item:
+```bash
+{
+  "include": [
+    "svgr.d.ts",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ]
+  // ...other config
+}
+```
+
 Create **svgr.d.ts** at the root of your repo and paste:
 ```bash
 declare module "*.svg" {
@@ -84,20 +98,6 @@ declare module "*.svg?url" {
 
   const content: StaticImageData
   export default content
-}
-```
-
-Add the type declaration file to your **tsconfig.json**'s include array. Ensure it's the first item:
-```bash
-{
-  "include": [
-    "svgr.d.ts",
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
-  ]
-  // ...other config
 }
 ```
 
